@@ -4,7 +4,7 @@ from datetime import datetime
 import google.generativeai as genai
 import json
 
-GOOGLE_API_KEY = "AIzaSyBChtpfxdTTuHGV_UY1-i6EpBhC03-1K1M"  # <-- Replace with your Google API key
+GOOGLE_API_KEY = "abcd"  # <-- Replace with your Google API key
 genai.configure(api_key=GOOGLE_API_KEY)
 
 QUESTION_TYPES = ["coding", "technical", "behavioral/aptitude"]
@@ -146,5 +146,6 @@ if st.button("🔄 Reset Progress"):
         st.rerun()
     else:
         st.experimental_rerun()
+
 
 st.caption("Made For Placement Preparation")
